@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    root:
+      url: http://localhost:8090/index
+    spiderman:
+      url: http://localhost:8085
+    hulk:
+      url: http://localhost:8086
+    legacy:
+      path: /foo/**
+      url: http://localhost:8081
+
+ribbon:
+  eureka:
+    enabled: false
